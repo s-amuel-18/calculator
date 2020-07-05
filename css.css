@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 28px;
+    background-color: #000;
+    /* background-color: rgb(255, 255, 255); */
+    color: rgb(255, 255, 255);
+    transition: .5s background;
+}
+
+.contentCalculadora {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 72vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+}
+
+.calculadora__contentResultado {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: flex-end;
+    padding: 0 25px;
+    font-size: 32px;
+}
+
+.calculadora__contentBotones {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calculadora__contentBotones_botones {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calculadora__contentBotones_botones span{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background .5s ;
+}
+
+span { -webkit-tap-highlight-color: rgba(255, 255, 255, 0) ; }
+
+.calculadora__contentBotones_botones span:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.calculadora__contentBotones_botones span:active {
+    background-color: rgba(255, 255, 255, 0.376);
+}
+
+/* modo noche */
+/* .calculadora__contentBotones_botones span:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.calculadora__contentBotones_botones span:active {
+    background-color: rgba(255, 255, 255, 0.376);
+} */
+
+.naranja {
+    color: #ff8800;
+    font-size: 33px;
+    transition: background .5s ease-in-out;
+}
+
+.calculadora__contentBotones_botones .naranja:hover {
+    background-color: #ff8800;
+    color: #fff;
+}
+
+.calculadora__contentBotones_botones .naranja:active {
+    background-color: #ffac4e;
+}
+
+.bcgNaranja {
+    background-color:  #ff8800;
+    transition:all .5s ease-in-out;
+}
+
+.calculadora__contentBotones_botones .bcgNaranja:hover {
+    background-color:  #ffa43c;
+}
+
+.lightMode {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(0, 138, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(41, 192, 251);
+    transform: scale(1);
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+}
+
+.darkMode {
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+    transform: scale(0);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+}
+
+
+@media (min-width:500px){
+    .calculadora {
+        width: 85%;
+        height: 100vh;
+    }
+    .calculadora__contentBotones_botones span{
+        width: 80px;
+        height: 80px;
+    }   
+}
+
+@media (min-width:700px){
+    .calculadora {
+        width: 60%;
+    }
+}
+@media (max-width:700px){
+    .calculadora__contentBotones_botones span:hover{
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    .calculadora__contentBotones_botones .naranja:hover {
+        background-color: #000000;
+        color: #ff8800;
+    }
+    .calculadora__contentBotones_botones .bcgNaranja:hover {
+        background-color:  #ff8800;
+    }
+}
+
+@media (min-width:900px){
+    .calculadora {
+        width: 50%;
+    }
+}
+@media (min-width:1000px){
+    .calculadora {
+        width: 40%;
+    }
+}
+@media (min-width:1200px){
+    .calculadora {
+        width: 35%;
+    }
+
+  
+}

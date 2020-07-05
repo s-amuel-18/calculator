@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- estilos css -->
+    <link rel="stylesheet" href="css.css">
+
+    <!-- boxicons -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <main>
+        <div class="contentCalculadora">
+            <div class="calculadora" id="calculadora">
+                <div class="calculadora__contentResultado" id="pantallaResultado"></div>
+                <div class="calculadora__contentBotones">
+                    <div class="calculadora__contentBotones_botones"><span class="naranja"
+                            data-operation="clear">c</span></div>
+                    <div class="calculadora__contentBotones_botones">
+                        <span class="naranja" id="numDelete" data-operation="delete"><i data-operation="delete" class='bx bx-left-arrow-alt'></i></span>
+                    </div>
+                    <div class="calculadora__contentBotones_botones"><span class="naranja" data-operation="percentage">%</span></div>
+                    <div class="calculadora__contentBotones_botones"><span class="naranja" data-math="divide">/</span>
+                    </div>
+                    <div class="calculadora__contentBotones_botones"><span data-number="7">7</span></div>
+                    <div class="calculadora__contentBotones_botones"><span data-number="8">8</span></div>
+                    <div class="calculadora__contentBotones_botones"><span data-number="9">9</span></div>
+                    <div class="calculadora__contentBotones_botones"><span class="naranja"
+                            data-math="multiplay">x</span></div>
+                    <div class="calculadora__contentBotones_botones"><span data-number="4">4</span></div>
+                    <div class="calculadora__contentBotones_botones"><span data-number="5">5</span></div>
+                    <div class="calculadora__contentBotones_botones"><span data-number="6">6</span></div>
+                    <div class="calculadora__contentBotones_botones"><span class="naranja" data-math="minus">-</span>
+                    </div>
+                    <div class="calculadora__contentBotones_botones"><span data-number="1">1</span></div>
+                    <div class="calculadora__contentBotones_botones"><span data-number="2">2</span></div>
+                    <div class="calculadora__contentBotones_botones"><span data-number="3">3</span></div>
+                    <div class="calculadora__contentBotones_botones"><span class="naranja" data-math="add">+</span>
+                    </div>
+                    <div class="calculadora__contentBotones_botones"><span></span></div>
+                    <div class="calculadora__contentBotones_botones"><span data-number="0">0</span></div>
+                    <div class="calculadora__contentBotones_botones"><span data-number=".">.</span></div>
+                    <div class="calculadora__contentBotones_botones"><span class="bcgNaranja"
+                            data-operation="iquals">=</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="lightMode" id="modoDia">
+            <i class='bx bxs-sun' style='color:#ffbe00'></i>
+        </div>
+        <div class="darkMode" id="modoNoche">
+            <i class='bx bxs-moon' undefined></i>
+        </div>
+    </main>
+    <!-- archivo javascript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
